@@ -5,14 +5,7 @@ from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
 
 def get_credentials():
     """Retrieves Watsonx.ai credentials from environment variables."""
-    # --- Debugging lines added ---
-    print("--- Debugging Environment Variables ---")
-    print(f"Attempting to read WATSONX_API_KEY: {os.getenv('WATSONX_API_KEY')}")
-    print(f"Attempting to read WATSONX_PROJECT_ID: {os.getenv('WATSONX_PROJECT_ID')}")
-    # You can uncomment the next line to print ALL environment variables Python sees, but it might be very long.
-    # print(os.environ) 
-    print("--- End Debugging ---")
-    # --- End Debugging lines ---
+    
 
     api_key = os.getenv("WATSONX_API_KEY")
     project_id = os.getenv("WATSONX_PROJECT_ID")
